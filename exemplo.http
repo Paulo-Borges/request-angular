@@ -1,0 +1,33 @@
+ http://localhost:3000/cursos
+
+
+###
+
+POST   http://localhost:3000/cursos HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Java"
+    
+}
+
+###
+Put   http://localhost:3000/cursos/DkoKGOV HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Javascript"
+    
+}
+
+###
+DELETE    http://localhost:3000/cursos/DkoKGOV HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Javascript"
+    
+}
+
+###
+http://localhost:3000/cursos
