@@ -1,1 +1,40 @@
-<p>cursos-lista works!</p>
+
+<div class="card">
+    <div class="card-header">
+        <div class="float-left">
+            <h4 class="">Cursos</h4>
+        </div>
+        <div class="float-right">
+            <button type="button" class="btn btn-primary" >Novo Curso</button>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Curso</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="">
+                <tr class="" >
+                    @for(curso of cursos; track curso.id) {
+
+                        <td>{{ curso.id }}</td>
+                        <td>{{  curso.nome }}</td>
+                   
+                    
+                    <td>
+                        <span class="float-right">
+                            <button class="btn btn-outline-warning mb-1 btn-sm">Atualizar</button>
+                            {{ '  ' }}
+                            <button class="btn btn-outline-danger mb-1 btn-sm">Remover</button>
+                        </span>
+                    </td>
+                } @empty { SEM RESPOSTA}
+                </tr>
+            </tbody>
+        </table>
+    </div>                                                    <!--   npx json-server --watch db.json -->
+</div>
