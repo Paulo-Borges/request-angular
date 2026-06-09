@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CursosService } from '../cursos.service';
 import { Curso } from './curso';
 import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cursos-lista',
@@ -12,6 +13,8 @@ import { CommonModule } from '@angular/common';
 export class CursosLista implements OnInit {
 
   cursos: Curso[] = [];
+
+  cursos$: Observable<Curso[]> | undefined;
 
   constructor(private service: CursosService){}
 

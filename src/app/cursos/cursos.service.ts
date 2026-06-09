@@ -11,6 +11,8 @@ export class CursosService {
 
   private readonly API = `${environment.API}cursos`;
 
+  // private readonly API = 'http://localhost:3000/cursos';
+
   constructor(private http: HttpClient){}
 
 

@@ -42,5 +42,33 @@ content-type: application/json
     
 }
 
+###
+Put   http://localhost:3000/cursos/DkoKGOV HTTP/1.1
+content-type: application/json
+
+{
+    "id": "2"
+    
+}
+
+###
+DELETE    http://localhost:3000/cursos/xs7wJ-C HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Java",
+    "id": "xs7wJ-C"
+    
+}
+
+###
+POST   http://localhost:3000/cursos HTTP/1.1
+content-type: application/json
+
+{
+    "nome": ".NET",
+    "id": "2"
+}
+
 
                                            // npx json-server --watch db.json 
